@@ -1,15 +1,21 @@
 # JavaFX-Point-Of-Sales-System
 1.	Introduction
+
 This document is a report for the Java programming project which is an attempt to design and create an application based on a Point of Sale System. For this project, JavaFX was implemented to create a Graphical User Interface(GUI) for a more user-friendly program.
+
 JavaFX is a set of graphics and media packages that enables developers to design, create, test, debug and deploy rich client applications that operate consistently across diverse platforms.
 
 Features of JavaFX:
 •	Written in Java – The JavaFX library is written in Java.
+
 •	Built-in UI controls – JavaFX library caters UI controls which can be used to develop a full-featured application.
+
 •	CSS like Styling – JavaFX provides CSS styling to improve the design of the application.
+
 •	Rich set of APIs– JavaFX library provides a rich set of APIs to develop GUI applications, 2D and 3D graphics.
 
 Java Development Kit (JDK) version 8 is used for this project as it includes the JavaFX library.
+
 The program consists of a buy, add, remove, search, sort, exit option. 
 
 2.	Design of the GUI
@@ -62,6 +68,7 @@ In the code above, a BorderPane is declared as layout and is set as the Scene.
 The window.setScene(scene) should be implemented to specify the scene used in the Stage.
 
 2.3.	MenuBar
+
 A MenuBar control traditionally is placed at the very top of the user interface and some menu items are added to it.
 
         Menu fileMenu = new Menu("_File");
@@ -80,6 +87,7 @@ The MenuBar is placed at the top of the layout by using BorderPane.
 MenuItems are also added to the MenuBar.
 
 2.4.	Buttons
+
 A JavaFX Button control enables a JavaFX application to have some action events executed when the application user clicks the button. The button control can contain text and/or a graphic.
 
 Action Events are implemented using the .setOnAction() function.
@@ -146,16 +154,27 @@ The table.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY) function is
 3.	Features
 
 The Point of Sales application consists of different features:
+
 1)	Buy Products
+
 2)	Add Products
+
 3)	Remove Products
+
 4)	Search by: 
+
 •	Product Name
+
 •	ProductID
+
 5)	Sort Products
+
 •	Sort by Name
+
 •	Sort by ProductID
+
 •	Sort by Smallest Price
+
 •	Sort by Largest Price
 
 3.1.	Buy Products
