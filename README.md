@@ -98,7 +98,7 @@ The data of each column’s cell is set to equal the value of the Constructor in
         priceColumn.setCellValueFactory(new PropertyValueFactory<>("price"));
         /* Weight column */
         TableColumn<Products, String> weightColumn = new TableColumn<>("Weight(kg/g/L/ml)");
-  weightColumn.setCellValueFactory(new PropertyValueFactory<>("weight"));
+        weightColumn.setCellValueFactory(new PropertyValueFactory<>("weight"));
 
         /* Calories column */
         TableColumn<Products, Integer> caloriesColumn = new TableColumn<>("Calories per serving");
