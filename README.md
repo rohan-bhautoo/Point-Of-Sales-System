@@ -1,7 +1,7 @@
 # JavaFX-Point-Of-Sales-System
 
 Introduction
--------------
+============
 
 This document is a report for the Java programming project which is an attempt to design and create an application based on a Point of Sale System. For this project, JavaFX was implemented to create a Graphical User Interface(GUI) for a more user-friendly program.
 
@@ -20,9 +20,12 @@ Java Development Kit (JDK) version 8 is used for this project as it includes the
 
 The program consists of a buy, add, remove, search, sort, exit option. 
 
-2.	Design of the GUI
+--------------------------------------------------------------------------------------------------------------------------------------------
 
-2.1.	Stage
+Design of the GUI
+=================
+Stage
+-----
 
 JavaFX Stage is the top-level JavaFX container. The primary Stage is constructed by the platform. The primary Stage is called window in the POS system java code.
 
@@ -52,7 +55,9 @@ And finally, window.setScene(scene) and window.show() is used to show the Window
         window.setScene(scene);
         window.show();
 
-2.2.	Scene
+Scene
+-----
+
 The JavaFX Scene is the container for all content in a scene graph. A layout like BorderPane, VBox, HBox, StackPane or GridPane must be specified in the scene to display all the contents to a Stage.
 
         BorderPane layout = new BorderPane();
@@ -69,7 +74,8 @@ In the code above, a BorderPane is declared as layout and is set as the Scene.
 
 The window.setScene(scene) should be implemented to specify the scene used in the Stage.
 
-2.3.	MenuBar
+MenuBar
+-------
 
 A MenuBar control traditionally is placed at the very top of the user interface and some menu items are added to it.
 
@@ -88,7 +94,8 @@ The MenuBar is placed at the top of the layout by using BorderPane.
         
 MenuItems are also added to the MenuBar.
 
-2.4.	Buttons
+Buttons
+-------
 
 A JavaFX Button control enables a JavaFX application to have some action events executed when the application user clicks the button. The button control can contain text and/or a graphic.
 
@@ -114,7 +121,8 @@ Below is how the image is imported from the Image folder.
          
 This size of the button can be adjusted using the .setPrefSize(230, 50) where 230 is the width and 50 is the height.
 
-2.5.	TableView
+TableView
+---------
 
 The JavaFX TableView enables data in file to be displayed inside a table.
 
@@ -153,7 +161,10 @@ The data of each column’s cell is set to equal the value of the Constructor in
         
 The table.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY) function is used to set all the columns to the same width. This helps to remove unused spaces or columns in the table.
 
-3.	Features
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Features
+========
 
 The Point of Sales application consists of different features:
 
@@ -179,7 +190,8 @@ The Point of Sales application consists of different features:
 
 •	Sort by Largest Price
 
-3.1.	Buy Products
+Buy Products
+------------
 
 The Buy Products feature is used to select a product from the table, by double-clicking on the product chosen, then entering the amount bought. The price will be automatically calculated in the calculatePrice() method.
 
@@ -220,7 +232,8 @@ After all products are selected and the user is ready to pay by pressing continu
         
 Finally, after everything is complete, the program will print a receipt for the user.
          
-3.2.	Add Products
+Add Products
+------------
 
 The Add Products feature enables the user to add new products by writing to file. 
 
@@ -230,7 +243,8 @@ The information about the new product is written in a TextField, then written to
 
 Some verifications are also added to check for valid input of information. And if the user entered an existing name or ID, an error message will be displayed and it will not be added to the file.
 
-3.3.	Remove Products
+Remove Products
+---------------
 
 Like the Add Products feature, the program has another feature called Remove Products to remove unwanted products from the file. The products are removed by specifying its ID.
 
@@ -248,11 +262,13 @@ Another Products array called anotherProducts is created but with length – 1.
         
 Here, if x is equal to searchResult which is the index of the ProductID, the iteration will increase by 1 in anotherProducts[k++]. This will skip the index of the searchResult to be written to file. Hence, the product will be removed.
 
-3.4.	Search by:
+Search by:
+----------
 
 The Search feature provides the user with 2 different options to search a product, by the product name or by the product ID.
 
-3.4.1.	Product Name
+Product Name
+------------
 
 When a product name is entered in the TextField, the searchName() method will see if the name exists in the product file. If the later does exists, all its information will be displayed, else nothing will be shown to the user.
 
@@ -266,7 +282,8 @@ Ex: User input: yoP; In file: YOP.
 
 Verification has also been implemented to check if user input is valid!
 
-3.4.2.	ProductID
+ProductID
+----------
 
 When a product ID is entered in the TextField, the searchID() method will see if the ID exists in the product file. If the later does exists, all its information will be displayed, else nothing will be shown to the user.
 
@@ -274,11 +291,13 @@ When a product ID is entered in the TextField, the searchID() method will see if
                 AlertBox.display("FOUND", "FOUND!\nID: " + product[i].getProductID() + "\nName: " + product[i].getName() + "\nPrice: RS " + product[i].getPrice() + "\nWeight: " + product[i].getWeight() + "\nCalories: " + product[i].getCalories() + "\nQuantity: " + product[i].getQuantity() + "\nCategory: " + product[i].getCategory());
         }
         
-3.5.	Sort Products
+Sort Products
+-------------
 
 The Sort Products feature uses 4 bubble sort algorithms. Therefore, the user has 4 different options to sort the file. It also contains a Reset function which clears the sorted algorithms and sets it back to the initial order.
 
-3.5.1.	Sort by Name
+Sort by Name
+------------
 
         for (int x = 1; x < count(); x++) {
                 for (int y = x; y > 0; y--) {
@@ -321,8 +340,9 @@ The compareTo will return:
 •	Negative Number – If the 1st String is smaller than the 2nd String.
 
 Hence, if the number is less than 0, it is swapped. This process is repeated again from 0th to y-1 index.
-3.5.2.	Sort by ID 
 
+Sort by ID 
+----------
         for (int x = 1; x < count(); x++) {
                 for (int y = x; y > 0; y--) {
                         if (product[y].getProductID() < ((product[y - 1].getProductID()))) {
@@ -357,7 +377,8 @@ Using bubble sort algorithm to compare IDs in product array. The current product
 
 The same process is applied to the sorting of smallest price.
 
-3.5.3.	Sort by Largest Price
+Sort by Largest Price
+---------------------
 
 The same algorithm is implemented to sort the prices by largest. But the prices will swap only if the 2nd  Price is greater than the 1st Price.
 
