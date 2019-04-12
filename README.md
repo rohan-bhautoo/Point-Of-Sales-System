@@ -1,5 +1,7 @@
 # JavaFX-Point-Of-Sales-System
-1.	Introduction
+
+Introduction
+-------------
 
 This document is a report for the Java programming project which is an attempt to design and create an application based on a Point of Sale System. For this project, JavaFX was implemented to create a Graphical User Interface(GUI) for a more user-friendly program.
 
