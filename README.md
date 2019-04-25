@@ -29,7 +29,7 @@ Stage
 
 JavaFX Stage is the top-level JavaFX container. The primary Stage is constructed by the platform. The primary Stage is called window in the POS system java code.
 
-@Override
+    @Override
     public void start(Stage primaryStage) {
         window = primaryStage;
         .
@@ -177,19 +177,19 @@ The Point of Sales application consists of different features:
 
 4)	Search by: 
 
-•	Product Name
+        •	Product Name
 
-•	ProductID
+        •	ProductID
 
 5)	Sort Products
 
-•	Sort by Name
+        •	Sort by Name
 
-•	Sort by ProductID
+        •	Sort by ProductID
 
-•	Sort by Smallest Price
+        •	Sort by Smallest Price
 
-•	Sort by Largest Price
+        •	Sort by Largest Price
 
 Buy Products
 ------------
