@@ -44,7 +44,7 @@ set PATH_TO_FX="path\to\javafx-sdk-17\lib"
 ### Java Development Kit (JDK) 
 > JDK version 11 is used for this project as it includes the JavaFX library. Download it [here](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html).
 > 
-> For windows:
+> For Windows:
 ```sh
 set JAVA_HOME="C:\[Path to folder]\Java\jdk-11.0.14
 ```
