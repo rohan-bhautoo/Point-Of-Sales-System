@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="300" height="300" src="https://github.com/rohan-bhautoo/Point-Of-Sales-System/blob/master/PointOfSales/build/classes/Image/POS-icon.png">
+  <img width="250" height="200" src="https://github.com/rohan-bhautoo/Point-Of-Sales-System/blob/master/pointofsales/src/main/java/com/pointofsales/Image/POS-icon.png">
 </p>
 <h1 align="center">Point of Sales System</h1>
 <p>
@@ -8,24 +8,31 @@
   <img alt="JDK" src="https://img.shields.io/badge/JDK->=8.0.0-blue.svg" />
 </p>
 
-This document is a report for the Java programming project which is an attempt to design and create an application based on a Point of Sale System. For this project, JavaFX was implemented to create a Graphical User Interface(GUI) for a more user-friendly program.
+## Description
+> A point of sale (POS) system is the place where your customer makes a payment for products or services at your store. With this idea, an application was designed and built using Java alongside with JavaFX to create a Graphical User Interface (GUI) for a more user-friendly program. See images of the application in the [Screenshot](/Screenshots) folder.
+> 
+> JavaFX is a set of graphics and media packages that enables developers to design, create, test, debug and deploy rich client applications that operate consistently across diverse platforms.
+> 
+> Features of JavaFX:
+> - Written in Java – The JavaFX library is written in Java.
+> - Built-in UI controls – JavaFX library caters UI controls which can be used to develop a full-featured application.
+> - CSS like Styling – JavaFX provides CSS styling to improve the design of the application.
+> - Rich set of APIs– JavaFX library provides a rich set of APIs to develop GUI applications, 2D and 3D graphics.
 
-JavaFX is a set of graphics and media packages that enables developers to design, create, test, debug and deploy rich client applications that operate consistently across diverse platforms.
+### 🏠 [Homepage](/pointofsales/src/main/java/com/pointofsales/PointOfSales.java)
+<p align="center">
+  <img src="https://github.com/rohan-bhautoo/Point-Of-Sales-System/blob/master/Screenshots/Main.png">
+</p>
 
-Features of JavaFX:
-•	Written in Java – The JavaFX library is written in Java.
+## Prerequisite
 
-•	Built-in UI controls – JavaFX library caters UI controls which can be used to develop a full-featured application.
+### JavaFX
+> JavaFX is an open source, next generation client application platform for desktop, mobile and embedded systems built on Java. Download it [here](https://openjfx.io/).
 
-•	CSS like Styling – JavaFX provides CSS styling to improve the design of the application.
-
-•	Rich set of APIs– JavaFX library provides a rich set of APIs to develop GUI applications, 2D and 3D graphics.
-
-Java Development Kit (JDK) version 8 is used for this project as it includes the JavaFX library.
+### Java Development Kit (JDK) 
+> JDK version 8 is used for this project as it includes the JavaFX library. Download it [here](https://www.oracle.com/java/technologies/downloads/).
 
 The program consists of a buy, add, remove, search, sort, exit option. 
-
---------------------------------------------------------------------------------------------------------------------------------------------
 
 Design of the GUI
 =================
