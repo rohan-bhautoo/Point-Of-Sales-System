@@ -24,7 +24,7 @@
 
 ### 🏠 [Homepage](/pointofsales/src/main/java/com/pointofsales/PointOfSales.java)
 <p align="center">
-  <img src="https://github.com/rohan-bhautoo/Point-Of-Sales-System/blob/master/Screenshots/Main.png">
+  <img height="400" src="https://github.com/rohan-bhautoo/Point-Of-Sales-System/blob/master/Screenshots/Main.png">
 </p>
 
 ## Prerequisite
