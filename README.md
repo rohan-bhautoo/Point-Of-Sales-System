@@ -1,7 +1,12 @@
-# JavaFX-Point-Of-Sales-System
-
-Introduction
-============
+<p align="center">
+  <img width="300" height="300" src="https://github.com/rohan-bhautoo/Point-Of-Sales-System/blob/master/PointOfSales/build/classes/Image/POS-icon.png">
+</p>
+<h1 align="center">Point of Sales System</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-brightgreen.svg" />
+  <img alt="Java" src="https://img.shields.io/badge/Java-ED8B00?logo=java&logoColor=white" />
+  <img alt="JDK" src="https://img.shields.io/badge/JDK->=8.0.0-blue.svg" />
+</p>
 
 This document is a report for the Java programming project which is an attempt to design and create an application based on a Point of Sale System. For this project, JavaFX was implemented to create a Graphical User Interface(GUI) for a more user-friendly program.
 
