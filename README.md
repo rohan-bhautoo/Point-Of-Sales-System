@@ -410,7 +410,7 @@ javac --module-path $PATH_TO_FX --add-modules javafx.controls PointOfSales.java
 javac --module-path %PATH_TO_FX% --add-modules javafx.controls PointOfSales.java
 ```
 
-> ** Make sure to add the required modules **
+> **Make sure to add the required modules**
 > 
 > Run the application
 > 
