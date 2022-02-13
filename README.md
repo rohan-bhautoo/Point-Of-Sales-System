@@ -411,7 +411,9 @@ javac --module-path %PATH_TO_FX% --add-modules javafx.controls PointOfSales.java
 ```
 
 > ** Make sure to add the required modules **
+> 
 > Run the application
+> 
 > For Linux:
 ```sh
 java --module-path $PATH_TO_FX --add-modules javafx.controls PointOfSales.java
